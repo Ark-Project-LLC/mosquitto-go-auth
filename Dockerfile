@@ -96,7 +96,7 @@ FROM debian:stable-slim
 
 RUN set -ex; \
     apt update; \
-    apt install -y libc-ares2 openssl uuid tini wget libssl-dev libcjson-dev
+    apt install -y libc-ares2 openssl uuid tini wget libssl-dev libcjson-dev gettext
 
 RUN mkdir -p /var/lib/mosquitto /var/log/mosquitto
 RUN set -ex; \
